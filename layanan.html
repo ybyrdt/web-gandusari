@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan | Kecamatan Gandusari</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Volkhov:ital@1&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">
+          <div class="navbar-brand-icon">
+            <img src="assets/logo.png" />
+          </div>
+          <div>
+            Gandusari
+            <span>Kabupaten Blitar</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profil.html"
+              >Profil <i class="fa fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="profil.html#visi">Visi Misi</a></li>
+              <li><a href="profil.html#lokasi">Lokasi</a></li>
+              <li><a href="profil.html#peta">Peta Wilayah</a></li>
+              <li><a href="tupoksi.html">Tupoksi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Informasi <i class="fa fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="berita.html">Berita</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="layanan.html">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- HERO LAYANAN -->
+    <section class="hero" style="min-height: 60vh">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">Pelayanan Publik</div>
+        <h1 class="hero-title">Layanan Kecamatan</h1>
+        <p class="hero-subtitle">Kecamatan Gandusari - Kabupaten Blitar</p>
+      </div>
+    </section>
+
+    <!-- LAYANAN -->
+    <section class="section bg-gray">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Apa yang Kami Layani</div>
+          <h2>Daftar Layanan</h2>
+          <div class="divider"></div>
+          <p>
+            Berbagai layanan publik Kecamatan Gandusari untuk membantu kebutuhan
+            administrasi dan informasi masyarakat.
+          </p>
+        </div>
+
+        <div class="layanan-grid">
+          <button class="layanan-card active" data-layanan="kependudukan">
+            <div class="layanan-icon"><i class="fa fa-id-card"></i></div>
+            <h3>Administrasi Kependudukan</h3>
+            <p>KTP, KK, pindah domisili, dan dokumen kependudukan lainnya.</p>
+          </button>
+
+          <button class="layanan-card" data-layanan="surat">
+            <div class="layanan-icon"><i class="fa fa-file-text"></i></div>
+            <h3>Surat Keterangan</h3>
+            <p>
+              Surat usaha, SKTM, pengantar nikah, ahli waris, dan legalisasi.
+            </p>
+          </button>
+
+          <button class="layanan-card" data-layanan="ppid">
+            <div class="layanan-icon"><i class="fa fa-search"></i></div>
+            <h3>Informasi Publik PPID</h3>
+            <p>Permohonan informasi publik dan akses dokumen resmi.</p>
+          </button>
+
+          <button class="layanan-card" data-layanan="aspirasi">
+            <div class="layanan-icon"><i class="fa fa-comments"></i></div>
+            <h3>Aspirasi & Pengaduan</h3>
+            <p>Saran, kritik, laporan, dan pengaduan pelayanan masyarakat.</p>
+          </button>
+
+          <button class="layanan-card" data-layanan="online">
+            <div class="layanan-icon"><i class="fa fa-desktop"></i></div>
+            <h3>Pak Carik Online</h3>
+            <p>Layanan administrasi desa berbasis digital.</p>
+          </button>
+        </div>
+
+        <div class="layanan-detail-wrap">
+          <div class="layanan-detail active" id="kependudukan">
+            <h3>Administrasi Kependudukan</h3>
+            <p>
+              Layanan ini membantu masyarakat dalam pengurusan administrasi
+              kependudukan.
+            </p>
+
+            <h4>Jenis Layanan</h4>
+            <ul>
+              <li>Pengantar KTP</li>
+              <li>Pengantar KK</li>
+              <li>Surat pindah domisili</li>
+              <li>Surat keterangan domisili</li>
+            </ul>
+
+            <h4>Persyaratan</h4>
+            <ul>
+              <li>Fotokopi KTP</li>
+              <li>Fotokopi KK</li>
+              <li>Surat pengantar desa</li>
+            </ul>
+
+            <div class="layanan-actions">
+              <a class="btn btn-gold" href="kontak.html">
+                <i class="fa fa-phone"></i> Hubungi Petugas
+              </a>
+
+              <a
+                class="btn btn-outline-green"
+                href="https://maps.app.goo.gl/YqYiWQ9mLUEY5mcT9"
+              >
+                <i class="fa fa-map-marker"></i> Datang ke Kantor
+              </a>
+            </div>
+          </div>
+
+          <div class="layanan-detail" id="surat">
+            <h3>Surat Keterangan</h3>
+            <p>
+              Layanan surat keterangan digunakan untuk keperluan administrasi
+              masyarakat yang membutuhkan pengesahan atau pengantar dari
+              pemerintah kecamatan.
+            </p>
+
+            <h4>Jenis Layanan</h4>
+            <ul>
+              <li>Surat keterangan usaha</li>
+              <li>Surat keterangan tidak mampu</li>
+              <li>Surat pengantar nikah</li>
+              <li>Surat ahli waris</li>
+              <li>Legalisasi dokumen</li>
+            </ul>
+
+            <h4>Persyaratan Umum</h4>
+            <ul>
+              <li>Surat pengantar dari desa</li>
+              <li>Fotokopi KTP dan KK</li>
+              <li>Dokumen pendukung sesuai jenis surat</li>
+            </ul>
+            <div class="layanan-actions">
+              <a class="btn btn-gold" href="kontak.html">
+                <i class="fa fa-phone"></i> Hubungi Petugas
+              </a>
+
+              <a
+                class="btn btn-outline-green"
+                href="https://maps.app.goo.gl/YqYiWQ9mLUEY5mcT9"
+              >
+                <i class="fa fa-map-marker"></i> Datang ke Kantor
+              </a>
+            </div>
+          </div>
+
+          <div class="layanan-detail" id="ppid">
+            <h3>Informasi Publik PPID</h3>
+            <p>
+              Layanan PPID membantu masyarakat memperoleh informasi publik
+              secara resmi, transparan, dan sesuai ketentuan yang berlaku.
+            </p>
+
+            <h4>Jenis Layanan</h4>
+            <ul>
+              <li>Permohonan informasi publik</li>
+              <li>Pengajuan keberatan informasi</li>
+              <li>Akses daftar informasi publik</li>
+              <li>Informasi laporan dan dokumen pemerintahan</li>
+            </ul>
+
+            <a class="btn btn-gold" href="https://ppid.blitarkab.go.id/">
+              <i class="fa fa-external-link"></i> Buka PPID
+            </a>
+          </div>
+
+          <div class="layanan-detail" id="aspirasi">
+            <h3>Aspirasi & Pengaduan</h3>
+            <p>
+              Masyarakat dapat menyampaikan keluhan, saran, kritik, dan aspirasi
+              terkait pelayanan maupun pembangunan di Kecamatan Gandusari.
+            </p>
+
+            <h4>Yang Bisa Disampaikan</h4>
+            <ul>
+              <li>Keluhan pelayanan</li>
+              <li>Saran peningkatan layanan</li>
+              <li>Laporan permasalahan masyarakat</li>
+              <li>Aspirasi pembangunan wilayah</li>
+            </ul>
+
+            <a class="btn btn-gold" href="kontak.html">
+              <i class="fa fa-paper-plane"></i> Kirim Aspirasi
+            </a>
+          </div>
+
+          <div class="layanan-detail" id="online">
+            <h3>Pak Carik Online</h3>
+            <p>
+              Pak Carik Online merupakan layanan administrasi desa berbasis
+              digital untuk mempermudah masyarakat dalam mengakses layanan
+              pemerintahan desa.
+            </p>
+
+            <h4>Fungsi Layanan</h4>
+            <ul>
+              <li>Pengajuan administrasi desa secara online</li>
+              <li>Mempermudah proses pelayanan warga</li>
+              <li>Mendukung digitalisasi pelayanan publik</li>
+            </ul>
+
+            <a class="btn btn-gold" href="https://pakcarik.blitarkab.go.id/">
+              <i class="fa fa-desktop"></i> Buka Pak Carik
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ALUR PELAYANAN -->
+    <section class="section alur-section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Prosedur</div>
+          <h2>Alur Pelayanan</h2>
+          <div class="divider"></div>
+          <p>
+            Langkah umum untuk mendapatkan pelayanan di Kecamatan Gandusari.
+          </p>
+        </div>
+
+        <div class="alur-grid">
+          <div class="alur-item">
+            <div class="alur-number">01</div>
+            <div class="alur-icon"><i class="fa fa-pencil-square-o"></i></div>
+            <h4>Datang / Ajukan</h4>
+            <p>
+              Masyarakat datang ke kantor kecamatan atau mengakses layanan
+              online yang tersedia.
+            </p>
+          </div>
+
+          <div class="alur-item">
+            <div class="alur-number">02</div>
+            <div class="alur-icon"><i class="fa fa-folder-open"></i></div>
+            <h4>Verifikasi Berkas</h4>
+            <p>
+              Petugas memeriksa kelengkapan dan kesesuaian dokumen persyaratan.
+            </p>
+          </div>
+
+          <div class="alur-item">
+            <div class="alur-number">03</div>
+            <div class="alur-icon"><i class="fa fa-cogs"></i></div>
+            <h4>Proses Layanan</h4>
+            <p>
+              Berkas diproses sesuai jenis layanan dan ketentuan yang berlaku.
+            </p>
+          </div>
+
+          <div class="alur-item">
+            <div class="alur-number">04</div>
+            <div class="alur-icon"><i class="fa fa-check-circle"></i></div>
+            <h4>Selesai</h4>
+            <p>Dokumen atau hasil layanan diberikan kepada masyarakat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="contact-strip">
+      <div class="container">
+        <h2>Butuh Bantuan Layanan?</h2>
+        <p>
+          Silakan hubungi kantor Kecamatan Gandusari untuk informasi lebih
+          lanjut.
+        </p>
+        <a class="btn btn-outline-w" href="kontak.html">
+          <i class="fa fa-phone"></i> Hubungi Kami
+        </a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-bottom">
+        <p>© 2025 Kecamatan Gandusari</p>
+      </div>
+    </footer>
+
+    <script>
+      const layananCards = document.querySelectorAll(".layanan-card");
+      const layananDetails = document.querySelectorAll(".layanan-detail");
+      const layananDetailWrap = document.querySelector(".layanan-detail-wrap");
+
+      layananCards.forEach((card) => {
+        card.addEventListener("click", () => {
+          const target = card.getAttribute("data-layanan");
+          const targetDetail = document.getElementById(target);
+
+          layananCards.forEach((item) => item.classList.remove("active"));
+          layananDetails.forEach((detail) => detail.classList.remove("active"));
+
+          card.classList.add("active");
+          targetDetail.classList.add("active");
+
+          setTimeout(() => {
+            layananDetailWrap.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }, 120);
+        });
+      });
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

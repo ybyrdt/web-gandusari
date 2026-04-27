@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kontak – Kabupaten Blitar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Volkhov:ital@1&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="loader">
+      <div class="loader-ring"></div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">
+          <div class="navbar-brand-icon">
+            <img src="assets/logo.png" />
+          </div>
+          <div>
+            Gandusari
+            <span>Kabupaten Blitar</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profil.html"
+              >Profil <i class="fa fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="profil.html#visi">Visi Misi</a></li>
+              <li><a href="profil.html#lokasi">Lokasi</a></li>
+              <li><a href="profil.html#peta">Peta Wilayah</a></li>
+              <li><a href="tupoksi.html">Tupoksi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Informasi <i class="fa fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="berita.html">Berita</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="layanan.html">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="section bg-gray" id="kontak-page">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Kontak</div>
+          <h2>Hubungi Kami</h2>
+          <div class="divider"></div>
+          <p>
+            Kami siap melayani pertanyaan, masukan, dan kebutuhan informasi dari
+            masyarakat Kecamatan Gandusari.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <div class="eyebrow">Informasi Kontak</div>
+            <h2>Kontak Resmi Kecamatan Gandusari</h2>
+            <div class="divider"></div>
+
+            <p>
+              Silakan hubungi kami melalui alamat, website, atau kanal
+              komunikasi resmi yang tersedia.
+            </p>
+
+            <div class="visi-misi">
+              <div class="vm-item">
+                <div class="vm-icon"><i class="fa fa-map-marker"></i></div>
+                <div class="vm-text">
+                  <strong>Alamat</strong>
+                  Jl. Raya Gandusari, Kec. Gandusari, Kabupaten Blitar, Jawa
+                  Timur
+                </div>
+              </div>
+
+              <div class="vm-item">
+                <div class="vm-icon"><i class="fa fa-globe"></i></div>
+                <div class="vm-text">
+                  <strong>Website</strong>
+                  kec-gandusari.blitarkab.go.id
+                </div>
+              </div>
+
+              <div class="vm-item">
+                <div class="vm-icon"><i class="fa fa-envelope"></i></div>
+                <div class="vm-text">
+                  <strong>Email</strong>
+                  kecgandusarikabblitar@gmail.com
+                </div>
+              </div>
+
+              <div class="vm-item">
+                <div class="vm-icon"><i class="fa fa-phone"></i></div>
+                <div class="vm-text">
+                  <strong>Telepon</strong>
+                  0817-8128-1287
+                </div>
+              </div>
+
+              <div class="vm-item">
+                <div class="vm-icon"><i class="fa fa-clock-o"></i></div>
+                <div class="vm-text">
+                  <strong>Jam Pelayanan</strong>
+                  Senin - Jumat, 08.00 - 15.00 WIB
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-img-wrap">
+            <div class="contact-form">
+              <h3>Kirim Pesan</h3>
+
+              <form>
+                <div class="form-group">
+                  <i class="fa fa-user"></i>
+                  <input type="text" placeholder="Nama Lengkap" required />
+                </div>
+
+                <div class="form-group">
+                  <i class="fa fa-envelope"></i>
+                  <input type="email" placeholder="Email" required />
+                </div>
+
+                <div class="form-group">
+                  <i class="fa fa-map-marker"></i>
+                  <input type="text" placeholder="Alamat" />
+                </div>
+
+                <div class="form-group textarea">
+                  <i class="fa fa-comment"></i>
+                  <textarea
+                    rows="4"
+                    placeholder="Pesan Anda..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                  <i class="fa fa-paper-plane"></i> Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-bottom">
+        <span
+          >© 2026 Kecamatan Gandusari – Kabupaten Blitar. Hak cipta
+          dilindungi.</span
+        >
+      </div>
+    </footer>
+
+    <!-- SCROLL UP -->
+    <div class="scroll-up" id="scrollUp">
+      <a href="#home"><i class="fa fa-angle-double-up"></i></a>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

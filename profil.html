@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil | Kecamatan Gandusari</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Font & Icon -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Volkhov:ital@1&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- 🔹 NAVBAR (copy dari index kamu) -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand">
+          <div class="navbar-brand-icon">
+            <img src="assets/logo.png" />
+          </div>
+          <div>
+            Gandusari
+            <span>Kabupaten Blitar</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profil.html"
+              >Profil <i class="fa fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="profil.html#visi">Visi Misi</a></li>
+              <li><a href="profil.html#lokasi">Lokasi</a></li>
+              <li><a href="profil.html#peta">Peta Wilayah</a></li>
+              <li><a href="tupoksi.html">Tupoksi</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Informasi <i class="fa fa-angle-down"></i
+            ></a>
+            <ul class="dropdown-menu">
+              <li><a href="berita.html">Berita</a></li>
+              <li><a href="galeri.html">Galeri</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="layanan.html">Layanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontak.html">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 🔥 HERO PROFIL -->
+    <section class="hero" style="min-height: 60vh">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-eyebrow">Profil</div>
+        <h1 class="hero-title">Kecamatan Gandusari</h1>
+        <p class="hero-subtitle">Kabupaten Blitar</p>
+      </div>
+    </section>
+
+    <!-- 🔥 ISI PROFIL -->
+    <section class="section bg-gray" id="visi">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Tentang Kami</div>
+          <h2>Profil Kecamatan</h2>
+          <div class="divider"></div>
+          <p>Informasi mengenai profil, visi, dan misi Kecamatan Gandusari.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-img-wrap">
+            <div
+              class="about-img"
+              style="background-image: url(&quot;assets/foto profil.png&quot;)"
+            ></div>
+          </div>
+
+          <div class="about-content">
+            <p>
+              Kecamatan Gandusari merupakan salah satu kecamatan di Kabupaten
+              Blitar...
+            </p>
+
+            <p>
+              Seiring waktu, Gandusari berkembang dengan memanfaatkan potensi...
+            </p>
+
+            <!-- VISI MISI -->
+            <div class="visi-misi">
+              <div class="vm-item">
+                <div class="vm-icon"><i class="fa fa-eye"></i></div>
+                <div class="vm-text">
+                  <strong>Visi</strong>
+                  Menuju Kabupaten Blitar Lebih Sejahtera, Maju dan Berdaya
+                  Saing.
+                </div>
+              </div>
+
+              <div class="vm-item">
+                <div class="vm-icon"><i class="fa fa-bullseye"></i></div>
+                <div class="vm-text">
+                  <strong>Misi</strong>
+                  <ul class="misi-list">
+                    <li>Meningkatkan kesejahteraan masyarakat...</li>
+                    <li>Memperkuat kehidupan masyarakat...</li>
+                    <li>Meningkatkan kualitas SDM...</li>
+                    <li>Mewujudkan tata kelola pemerintahan...</li>
+                    <li>Mengembangkan ekonomi masyarakat...</li>
+                    <li>Mendorong pembangunan desa...</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 MAP  -->
+    <!-- 🔹 MAP GOOGLE -->
+    <section class="section map-section" id="lokasi">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Lokasi Kami</div>
+          <h2>Google Maps</h2>
+          <div class="divider"></div>
+          <p>Lokasi Kecamatan Gandusari melalui Google Maps.</p>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Kecamatan+Gandusari+Blitar&output=embed"
+            loading="lazy"
+            allowfullscreen=""
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 MAP ADMINISTRASI -->
+    <section class="section map-section" id="peta">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Wilayah Administrasi</div>
+          <h2>Peta Wilayah Gandusari</h2>
+          <div class="divider"></div>
+          <p>
+            Peta administrasi yang menampilkan desa dan batas wilayah Kecamatan
+            Gandusari.
+          </p>
+        </div>
+
+        <div class="map-image-wrap">
+          <img src="assets/Map.png" alt="Peta Administrasi Gandusari" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 FOOTER (copy dari index biar sama) -->
+    <footer>
+      <div class="footer-bottom">
+        <p>© 2025 Kecamatan Gandusari</p>
+      </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
