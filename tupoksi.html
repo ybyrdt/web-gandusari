@@ -63,8 +63,73 @@
             <a class="nav-link" href="kontak.html">Kontak</a>
           </li>
         </ul>
+
+        <button class="hamburger" id="hamburgerBtn" aria-label="Buka menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </div>
+    <!-- OVERLAY -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- MOBILE SIDEBAR -->
+    <aside class="mobile-sidebar" id="mobileSidebar">
+      <div class="sidebar-header">
+        <a href="index.html" class="sidebar-brand">
+          <img src="assets/logo.png" alt="Logo" />
+          <div>
+            Gandusari
+            <small>Kabupaten Blitar</small>
+          </div>
+        </a>
+        <button class="sidebar-close" id="sidebarClose" aria-label="Tutup menu">
+          <i class="fa fa-times"></i>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="sidebar-nav-item">
+          <a class="sidebar-nav-link" href="index.html">Beranda</a>
+        </div>
+        <div class="sidebar-nav-item has-sub">
+          <span class="sidebar-nav-link">
+            Profil <i class="fa fa-chevron-down"></i>
+          </span>
+          <div class="sidebar-submenu">
+            <a href="profil.html#visi">Visi Misi</a>
+            <a href="profil.html#lokasi">Lokasi</a>
+            <a href="profil.html#peta">Peta Wilayah</a>
+            <a href="tupoksi.html">Tupoksi</a>
+          </div>
+        </div>
+        <div class="sidebar-nav-item has-sub">
+          <span class="sidebar-nav-link">
+            Informasi <i class="fa fa-chevron-down"></i>
+          </span>
+          <div class="sidebar-submenu">
+            <a href="berita.html">Berita</a>
+            <a href="galeri.html">Galeri</a>
+          </div>
+        </div>
+        <div class="sidebar-nav-item">
+          <a class="sidebar-nav-link" href="layanan.html">Layanan</a>
+        </div>
+        <div class="sidebar-nav-item">
+          <a class="sidebar-nav-link" href="kontak.html">Kontak</a>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <p>Ikuti Kami</p>
+        <div class="sf-links">
+          <a href="https://www.facebook.com/kecgandusariblitar"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/kecgandusariblitar/"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@kecgandusariblitar"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+    </aside>
 
     <!-- HERO -->
     <section class="hero" style="min-height: 50vh">

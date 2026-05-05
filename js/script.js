@@ -141,3 +141,58 @@ document.querySelectorAll('.read-more-btn').forEach(btn => {
       : 'Baca Selengkapnya';
   });
 });
+
+// ── HAMBURGER & MOBILE SIDEBAR ──
+(function initSidebar() {
+  const hamburger   = document.getElementById('hamburgerBtn');
+  const sidebar     = document.getElementById('mobileSidebar');
+  const overlay     = document.getElementById('sidebarOverlay');
+  const closeBtn    = document.getElementById('sidebarClose');
+
+  if (!hamburger || !sidebar) return;
+
+  function openSidebar() {
+    sidebar.classList.add('open');
+    overlay.classList.add('active');
+    hamburger.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeSidebar() {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('active');
+    hamburger.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  hamburger.addEventListener('click', () => {
+    sidebar.classList.contains('open') ? closeSidebar() : openSidebar();
+  });
+
+  closeBtn  && closeBtn.addEventListener('click', closeSidebar);
+  overlay   && overlay.addEventListener('click', closeSidebar);
+
+  // Tutup sidebar jika ESC ditekan
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeSidebar();
+  });
+
+  // Submenu accordion (Profil, Informasi)
+  document.querySelectorAll('.sidebar-nav-item.has-sub .sidebar-nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const item = link.closest('.sidebar-nav-item');
+      const isOpen = item.classList.contains('open');
+
+      // tutup semua submenu dulu
+      document.querySelectorAll('.sidebar-nav-item.has-sub').forEach(i => i.classList.remove('open'));
+
+      // buka yang diklik (toggle)
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // Tutup sidebar saat klik link biasa (non-submenu toggle)
+  document.querySelectorAll('.sidebar-nav a, .sidebar-submenu a').forEach(a => {
+    a.addEventListener('click', closeSidebar);
+  });
+})();
